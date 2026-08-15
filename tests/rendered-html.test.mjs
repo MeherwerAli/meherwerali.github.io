@@ -151,6 +151,19 @@ test("contact page includes email, LinkedIn, Medium, GitHub, and a no-storage ma
   }
 });
 
+test("the official Medium mark is shared by the footer and contact card", async () => {
+  const primaryRoutes = ["/", "/work/", "/about/", "/contact/"];
+  for (const route of primaryRoutes) {
+    assert.match(pages.get(route), /src="\/medium-icon-white\.svg"/);
+  }
+
+  const contact = pages.get("/contact/");
+  assert.equal((contact.match(/src="\/medium-icon-white\.svg"/g) ?? []).length, 2);
+  assert.doesNotMatch(contact, /<span class="contact-icon"[^>]*>M<\/span>/);
+  assert.doesNotMatch([...pages.values()].join("\n"), /M4 7\.5 8\.3 18/);
+  await access(new URL("../public/medium-icon-white.svg", import.meta.url));
+});
+
 test("social metadata is site-specific and screenshot-only private details were not copied", () => {
   const allHtml = [...pages.values()].join("\n");
   assert.match(pages.get("/"), /property="og:image" content="https:\/\/meherwerali\.github\.io\/og\.png"/);

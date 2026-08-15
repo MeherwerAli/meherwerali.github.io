@@ -800,6 +800,11 @@ textarea:focus-visible {
   font-weight: 600;
 }
 
+.contact-icon .medium-brand-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .contact-card > span:nth-child(2) {
   min-width: 0;
 }
@@ -1036,6 +1041,11 @@ textarea:focus-visible {
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.medium-brand-icon {
+  display: block;
+  flex: none;
 }
 
 @keyframes blink {

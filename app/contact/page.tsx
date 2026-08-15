@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SectionRule, SiteFooter, SiteHeader } from "../site-chrome";
+import { MediumIcon, SectionRule, SiteFooter, SiteHeader } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "Contact — Meherwer Ali",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const contacts = [
   { label: "Email", value: "meherwer.09@gmail.com", href: "mailto:meherwer.09@gmail.com", icon: "@" },
   { label: "LinkedIn", value: "linkedin.com/in/meherwer-ali", href: "https://www.linkedin.com/in/meherwer-ali", icon: "in" },
-  { label: "Medium", value: "medium.com/@meherwer_ali", href: "https://medium.com/@meherwer_ali", icon: "M" },
+  { label: "Medium", value: "medium.com/@meherwer_ali", href: "https://medium.com/@meherwer_ali", icon: "medium" },
   { label: "GitHub", value: "github.com/MeherwerAli", href: "https://github.com/MeherwerAli", icon: "gh" },
 ] as const;
 
@@ -54,7 +54,9 @@ export default function ContactPage() {
                   {...(contact.href.startsWith("https://") ? { target: "_blank", rel: "noreferrer" } : {})}
                   key={contact.label}
                 >
-                  <span className="contact-icon" aria-hidden="true">{contact.icon}</span>
+                  <span className="contact-icon" aria-hidden="true">
+                    {contact.icon === "medium" ? <MediumIcon /> : contact.icon}
+                  </span>
                   <span><strong>{contact.label}</strong><small>{contact.value}</small></span>
                   <i aria-hidden="true">↗</i>
                 </a>

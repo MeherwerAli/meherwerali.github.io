@@ -31,6 +31,19 @@ export function SiteHeader({ active }: { active: ActivePage }) {
   );
 }
 
+export function MediumIcon() {
+  return (
+    <img
+      className="medium-brand-icon"
+      src="/medium-icon-white.svg"
+      alt=""
+      width="22"
+      height="22"
+      aria-hidden="true"
+    />
+  );
+}
+
 function FooterIcon({ name }: { name: "github" | "linkedin" | "medium" | "email" }) {
   if (name === "email") {
     return (
@@ -48,11 +61,7 @@ function FooterIcon({ name }: { name: "github" | "linkedin" | "medium" | "email"
     );
   }
   if (name === "medium") {
-    return (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4 7.5 8.3 18M4 18 8.2 7.5M9 7.5 13.3 18M9 18l4.2-10.5M15 8.5V18M19 7.5V18" />
-      </svg>
-    );
+    return <MediumIcon />;
   }
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
