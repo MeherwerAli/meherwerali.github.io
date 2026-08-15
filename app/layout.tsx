@@ -1,31 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
+const inter = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const jetBrainsMono = JetBrains_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://meherwerali.github.io"),
-  title: "Meherwer Ali — Reliable Backend & AI Systems",
+  title: "Meherwer Ali — Java, Distributed Systems & Cloud",
   description:
-    "Senior Backend Engineer and Tech Lead building distributed systems, cloud platforms, and measurable AI products.",
+    "Senior Backend Engineer and Tech Lead building Java and Spring Boot systems, Node.js services, cloud platforms, and reliable AI integrations.",
   openGraph: {
-    title: "Reliable Systems. Measurable AI.",
-    description: "Backend and AI systems engineered around failure, cost, and evidence.",
-    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Reliable Systems. Measurable AI." }],
+    title: "Backend Systems That Hold Up in Production",
+    description: "Java, Spring Boot, Node.js, distributed systems, cloud infrastructure, and reliable AI integration.",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Backend systems, cloud platforms, and reliable AI integration." }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reliable Systems. Measurable AI.",
-    description: "Backend and AI systems engineered around failure, cost, and evidence.",
+    title: "Backend Systems That Hold Up in Production",
+    description: "Java, Spring Boot, Node.js, distributed systems, cloud infrastructure, and reliable AI integration.",
     images: ["/og.png"],
   },
   icons: {
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${jetBrainsMono.variable} antialiased`}
       >
         {children}
       </body>
