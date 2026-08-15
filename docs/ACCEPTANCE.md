@@ -14,6 +14,7 @@ This report separates current local observations from publication and production
 - **Confirmed:** PII was initially classified but still reached the provider adapter. The implementation now redacts before provider dispatch and tests the boundary.
 - **Confirmed:** stopword overlap initially caused a false supported answer. Content-token reranking now restores abstention for the unsupported case.
 - **Confirmed:** the first UI container bound only to its container hostname. It now binds to `0.0.0.0` and passes its health check.
+- **Confirmed:** GitHub automatically started a legacy Pages deployment after the first push to the special user-site repository name. The run was cancelled, the repository Pages build type was changed to `workflow`, and the public URL returned 404 while the local server remained available.
 - **Refuted:** representative Mac-only vLLM performance. The benchmark command refuses to emit results without an NVIDIA L4.
 - **Refuted:** universal prompt-injection prevention. Every public description limits the claim to layered risk mitigation.
 - **Refuted:** treating source publication as release or deployment evidence. The four repositories are published, but no `v0.1.0` tag, GitHub Release, Pages deployment, or hosted runtime has been observed.

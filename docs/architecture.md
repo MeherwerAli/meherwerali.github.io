@@ -18,7 +18,7 @@ The page is a static export. It owns no accounts, persistence, forms, cookies, a
 - A production build failure blocks the deploy artifact.
 - Internal fragment links are checked against rendered element IDs.
 - External repository links are checked separately because network availability is a distinct evidence class.
-- The manual-only Pages workflow preserves the explicit deployment approval gate.
+- The manual-only Pages workflow and repository-level `workflow` build type preserve the explicit deployment approval gate. GitHub's automatic legacy deployment for the special user-site repository name was cancelled during initial publication.
 - The site contains public project facts and locally generated evidence only; private JobsApply and employer sources stay outside this repository.
 
 ## Limitations
