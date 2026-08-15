@@ -14,18 +14,18 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://meherwerali.github.io"),
-  title: "Meherwer Ali — Java, Distributed Systems & Cloud",
+  title: "Meherwer Ali — Senior Software Engineer & Tech Lead",
   description:
-    "Senior Backend Engineer and Tech Lead building Java and Spring Boot systems, Node.js services, cloud platforms, and reliable AI integrations.",
+    "Senior Software Engineer and Tech Lead building distributed systems, cloud platforms, reliable AI integrations, and modern web products across Java, Node.js, and TypeScript.",
   openGraph: {
-    title: "Backend Systems That Hold Up in Production",
-    description: "Java, Spring Boot, Node.js, distributed systems, cloud infrastructure, and reliable AI integration.",
-    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Backend systems, cloud platforms, and reliable AI integration." }],
+    title: "Senior Software Engineer & Tech Lead",
+    description: "Distributed systems, cloud platforms, reliable AI integration, and modern web engineering across Java, Node.js, and TypeScript.",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Software systems, cloud platforms, and reliable AI integration." }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Backend Systems That Hold Up in Production",
-    description: "Java, Spring Boot, Node.js, distributed systems, cloud infrastructure, and reliable AI integration.",
+    title: "Senior Software Engineer & Tech Lead",
+    description: "Distributed systems, cloud platforms, reliable AI integration, and modern web engineering across Java, Node.js, and TypeScript.",
     images: ["/og.png"],
   },
   icons: {

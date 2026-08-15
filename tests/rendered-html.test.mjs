@@ -158,15 +158,18 @@ test("social metadata is site-specific and screenshot-only private details were 
   assert.doesNotMatch(allHtml, /\(\+971\)|Zenith Gulf|AirRetailer|MEDZnMORE|Sibisoft|Nucleus Solutions|Sharjah Police|Dubai Police|WantedDB|SourceDB/);
 });
 
-test("positioning follows the backend-first capability hierarchy", () => {
+test("positioning matches the CV title without erasing technical evidence", () => {
   const home = pages.get("/");
   const work = pages.get("/work/");
   const about = pages.get("/about/");
-  assert.match(home, /Java and Spring Boot systems first/);
+  assert.match(home, /Senior Software Engineer &amp; Tech Lead/);
+  assert.match(home, /Java, Node\.js, and TypeScript/);
+  assert.doesNotMatch(home, /Java &amp; Backend Tech Lead|Senior backend engineer|Java and Spring Boot systems first/i);
   assert.ok(home.indexOf("Real-Time Public-Safety Integration") < home.indexOf("Bare-Metal Kubernetes to GKE Migration"));
-  assert.ok(work.indexOf("Backend systems") < work.indexOf("Production infrastructure"));
+  assert.ok(work.indexOf("Software &amp; distributed systems") < work.indexOf("Production infrastructure"));
   assert.ok(work.indexOf("Production infrastructure") < work.indexOf("AI integration &amp; applied AI"));
-  assert.match(about, /My strongest work is Java and Spring Boot, followed by Node\.js, production infrastructure, AI integrations, applied AI, and frontend delivery/);
+  assert.match(about, /Senior Software Engineer and Tech Lead/);
+  assert.match(about, /distributed systems, cloud platforms, reliable AI integrations, frontend delivery, and backend services across Java, Node\.js, and TypeScript/);
 });
 
 test("responsive and reduced-motion fallbacks remain in the stylesheet", () => {

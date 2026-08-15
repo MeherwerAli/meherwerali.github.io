@@ -2,7 +2,7 @@
 
 Static TypeScript portfolio for the positioning:
 
-> Senior Backend Engineer & Tech Lead | Distributed Systems · Cloud Platforms · Reliable AI Systems
+> Senior Software Engineer & Tech Lead | Distributed Systems · Cloud Platforms · Reliable AI Systems
 
 The site leads with three coherent systems, then retains five existing repositories as supporting evidence. Each flagship dossier covers the problem, architecture, failure semantics, security boundary, benchmark/evaluation evidence, demo status, decisions, and known limitations.
 

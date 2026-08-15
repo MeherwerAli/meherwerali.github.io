@@ -3,11 +3,11 @@ import { SectionRule, SiteFooter, SiteHeader } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "About — Meherwer Ali",
-  description: "Backend engineering focus, portfolio evidence, and working principles.",
+  description: "Software engineering experience, portfolio evidence, and working principles.",
 };
 
 const focus = [
-  "Java & Spring distributed systems",
+  "Distributed software systems",
   "Node.js service platforms",
   "Production cloud & infrastructure",
   "AI integration boundaries",
@@ -16,7 +16,7 @@ const focus = [
 ] as const;
 
 const stack = [
-  { label: "Primary backend", values: ["Java 17", "Spring Boot 3", "Spring Cloud", "Hibernate"] },
+  { label: "Backend platforms", values: ["Java 17", "Spring Boot 3", "Spring Cloud", "Hibernate"] },
   { label: "Service platforms", values: ["Node.js", "ExpressJS", "NestJS", "TypeScript", "Python", "FastAPI"] },
   { label: "Data & messaging", values: ["Apache Kafka", "Redis", "PostgreSQL", "MySQL", "MongoDB", "Debezium"] },
   { label: "Cloud & operations", values: ["Kubernetes", "GKE", "Docker", "GCP", "AWS", "Terraform", "OpenTelemetry"] },
@@ -58,7 +58,7 @@ const evidence = [
   {
     date: "Current portfolio",
     title: "Reliable AI integration and applied AI",
-    summary: "Public clean-room systems that extend the backend foundation.",
+    summary: "Public clean-room systems that extend the software platform foundation.",
     bullets: [
       "An LLM gateway makes rate, cost, schema, policy, webhook, and trace behavior explicit.",
       "A cited research workflow grounds claims and persists approval decisions.",
@@ -81,7 +81,7 @@ export default function AboutPage() {
           <div className="about-story">
             <h2 className="sr-only" id="about-summary-title">About Meherwer Ali</h2>
             <p className="about-lead">
-              I&apos;m <span>Meherwer Ali</span>, a Senior Backend Engineer and Tech Lead. My strongest work is Java and Spring Boot, followed by Node.js, production infrastructure, AI integrations, applied AI, and frontend delivery.
+              I&apos;m <span>Meherwer Ali</span>, a Senior Software Engineer and Tech Lead. My work spans distributed systems, cloud platforms, reliable AI integrations, frontend delivery, and backend services across Java, Node.js, and TypeScript.
             </p>
             <p>
               I&apos;ve worked across public safety, travel, healthcare, club-management, and e-commerce systems—designing service boundaries, Kafka pipelines, database-change streams, multi-tenant JVM platforms, and cloud operating models.

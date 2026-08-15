@@ -12,13 +12,13 @@ import { SectionRule, SiteFooter, SiteHeader } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "Work — Meherwer Ali",
-  description: "Java, Node.js, distributed systems, cloud infrastructure, and reliable AI engineering case studies.",
+  description: "Distributed systems, cloud infrastructure, reliable AI, frontend, and backend engineering case studies.",
 };
 
 const workGroups = [
   {
-    title: "Backend systems",
-    description: "Java and Spring systems lead, followed by Node.js services and public backend references.",
+    title: "Software & distributed systems",
+    description: "Distributed and service-oriented systems across Java, Spring, Node.js, and public engineering references.",
     projects: [...experienceProjects, ...publicBackendProjects],
   },
   {
@@ -47,7 +47,7 @@ export default function WorkPage() {
         <header className="shell page-intro">
           <h1>Work</h1>
           <p>
-            Backend-first systems across Java and Spring Boot, Node.js, event-driven architecture, production cloud platforms, and reliable AI integration.
+            Software systems across distributed architecture, Java and Spring Boot, Node.js, event-driven platforms, cloud infrastructure, frontend delivery, and reliable AI integration.
           </p>
         </header>
         <div className="shell projects-section">

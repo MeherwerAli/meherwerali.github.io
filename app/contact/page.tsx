@@ -62,7 +62,7 @@ export default function ContactPage() {
             </div>
             <div className="availability-card">
               <p><span>/*</span> Availability <span>*/</span></p>
-              <strong>Open to senior backend engineering, tech lead, and architecture conversations.</strong>
+              <strong>Open to senior software engineering, tech lead, and architecture conversations.</strong>
             </div>
           </div>
         </section>
