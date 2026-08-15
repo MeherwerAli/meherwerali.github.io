@@ -15,7 +15,7 @@ npm audit --audit-level=high
 npm run check:external
 ```
 
-`next build` produces a static `out/` directory. The GitHub Pages workflow is manual-only: publishing source cannot deploy the site. Pages configuration and workflow dispatch remain explicit approval gates.
+`next build` produces a static `out/` directory. Pushes to `main` deploy through the GitHub Pages workflow, which can also be run manually. GitHub Pages must use GitHub Actions as its publishing source.
 
 ## Evidence posture
 
