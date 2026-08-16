@@ -5,6 +5,8 @@ const links = [
   "https://github.com/MeherwerAli/llm-eval-inference-lab",
   "https://github.com/MeherwerAli/spring-cloud-platform-lab",
   "https://github.com/MeherwerAli/kafka-consumer-reference",
+  "https://github.com/MeherwerAli/vaultsearch",
+  "https://github.com/MeherwerAli/throttle",
   "https://github.com/MeherwerAli/responsible-web-crawler",
   "https://github.com/MeherwerAli/document-portfolio-generator",
   "https://github.com/MeherwerAli/engineering-knowledge-vault",
