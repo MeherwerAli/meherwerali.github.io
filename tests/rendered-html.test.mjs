@@ -62,11 +62,19 @@ test("project index leads with backend experience and preserves public portfolio
     "LLM Eval &amp; Inference Lab",
     "Spring Cloud Platform Lab",
     "Kafka Consumer Reference",
+    "VaultSearch",
+    "Throttle",
     "Responsible Web Crawler",
     "Document Portfolio Generator",
     "Engineering Knowledge Vault",
   ]) {
     assert.ok(html.includes(title), `missing project title: ${title}`);
+  }
+  for (const repository of [
+    "https://github.com/MeherwerAli/vaultsearch",
+    "https://github.com/MeherwerAli/throttle",
+  ]) {
+    assert.match(html, new RegExp(`href="${repository.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
   }
   for (const slug of [
     "public-safety-distributed-integration",

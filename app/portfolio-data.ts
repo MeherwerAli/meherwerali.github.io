@@ -237,6 +237,26 @@ export const publicBackendProjects: readonly Project[] = [
     result: "Failure-path tests cover duplicates, invalid input, sink and DLQ failures, and partial batches",
     repository: "https://github.com/MeherwerAli/kafka-consumer-reference",
   },
+  {
+    slug: "vaultsearch",
+    title: "VaultSearch",
+    category: "Public search and indexing service",
+    summary:
+      "A headless, read-only service that projects Obsidian-style Markdown vaults into authenticated full-text search and backlink APIs.",
+    stack: ["Java 17", "Spring Boot 3.5", "MySQL", "Elasticsearch", "Kubernetes"],
+    result: "Transactional outbox, idempotent indexing, bounded retry, and explicit degraded-state recovery",
+    repository: "https://github.com/MeherwerAli/vaultsearch",
+  },
+  {
+    slug: "throttle",
+    title: "Throttle",
+    category: "Public distributed admission-control library",
+    summary:
+      "An Express library for exact sliding-window and token-bucket admission control with atomic Redis operations and explicit outage behavior.",
+    stack: ["TypeScript", "Node.js 22", "Express", "Redis", "Lua"],
+    result: "Fail-closed HTTP 503 by default; opt-in fail-open emits an explicit degraded decision",
+    repository: "https://github.com/MeherwerAli/throttle",
+  },
 ];
 
 export const aiProjects: readonly Project[] = [
